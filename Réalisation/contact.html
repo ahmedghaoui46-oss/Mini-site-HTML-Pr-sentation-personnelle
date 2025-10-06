@@ -1,56 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — Mini-site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Site</title>
 </head>
 <body>
-  <header>
-    <h1>Contact</h1>
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
+    <header>
+         <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
+    </header>
+    <main>
+         <section>
+            <h2>Mes Informations</h2>
+            <p>Email : <a href="mailto:ghaouiahmed46@gmail.com" target="_blank">Gmail</a></p>
+            <p>GitHub : <a href="https://github.com/ahmedghaoui46-oss" target="_blank">Github</a></p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/ghaoui-ahmed-6a00a9388/" target="_blank">LinkedIn</a> </p>
+            </section>
+                <section>
+            <h2>Formulaire de Contact</h2>
+            <form action="">
+            <fieldset>
+                <legend>Vos informations</legend>
+                <label for="email">Email :
+                    <input type="email" name="email" required id="email">
+                  </label>
+                  <label for="nom">Nom:
+                    <input type="text" name="Nom" id="nom" required>
+                  </label>
+                  <label for="tele">Téléphone :
+                    <input type="tel" name="telephone" id="tele" pattern="[0-9]{10}" required>
+                  </label>
+            </fieldset>
+            <fieldset>
+                <legend>Details</legend>
+                <label for="date">Date
+                    <input type="date" name="time" id="date">
+                </label>
+                <label for="time"> Heure</label>
+                <input type="time" id="time" name="heure">
+                <label for="comp">Compétences Préferer
+                    <select name="Compétences" id="comp">
+                        <option> HTML</option>
+                        <option>Git-GitHub</option>
+                        <option>JavaScript</option>
+                    </select>
+                </label> <br>
+                <textarea name="Message" id="" cols="15" rows="5" placeholder="vos messages"></textarea>
+                <button type="submit">Envoyer</button>
 
-  <main>
-    <section>
-      <h2>Formulaire de contact</h2>
-      <form action="/envoyer" method="post">
-        <div>
-          <label for="nom">Nom *</label><br>
-          <input type="text" id="nom" name="nom" required>
-        </div>
-
-        <div>
-          <label for="email">E-mail *</label><br>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div>
-          <label for="message">Message *</label><br>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <div>
-          <button type="submit">Envoyer</button>
-          <button type="reset">Effacer</button>
-        </div>
-      </form>
-    </section>
-
-    <section>
-      <h2>Informations directes</h2>
-      <p>Vous pouvez aussi écrire à : <a href="mailto:ghaouiahmed46@gamil.com">ghaouiahmed46@gamil.com</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 — Mini-site HTML</p>
-  </footer>
+            </fieldset>
+            </form>
+            
+        </section>
+    </main>
+    
 </body>
 </html>
